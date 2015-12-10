@@ -129,6 +129,7 @@
         [_cell setEditing:shouldEdit];
         [((QuickDialogController *)self.controller).quickDialogTableView reloadRowHeights];
     }
+    [super performAction];
 }
 
 
