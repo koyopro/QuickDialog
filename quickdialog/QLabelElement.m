@@ -71,5 +71,11 @@
         [tableView deselectRowAtIndexPath:path animated:YES];
 }
 
+- (void)fetchValueIntoObject:(id)obj {
+    if (_key==nil)
+        return;
+    
+    [obj setValue:_value forKey:_key];
+}
 
 @end
