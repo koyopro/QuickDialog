@@ -24,7 +24,6 @@
 
 
 @implementation QuickDialogController {
-    BOOL _keyboardVisible;
     BOOL _viewOnScreen;
     BOOL _resizeWhenKeyboardPresented;
     UIPopoverController *_popoverForChildRoot;
@@ -169,10 +168,6 @@
 
     BOOL up = aNotification.name == UIKeyboardWillShowNotification;
 
-    if (_keyboardVisible == up)
-        return;
-
-    _keyboardVisible = up;
     NSDictionary* userInfo = [aNotification userInfo];
     NSTimeInterval animationDuration;
     UIViewAnimationOptions animationCurve;
