@@ -13,7 +13,6 @@
 //
 
 
-#import "QMapViewController.h"
 #import "QMapElement.h"
 #import "QuickDialog.h"
 
@@ -40,8 +39,6 @@
 }
 
 - (void)selected:(QuickDialogTableView *)tableView controller:(QuickDialogController *)controller indexPath:(NSIndexPath *)path {
-    QMapViewController *mapController = [[QMapViewController alloc] initWithTitle:_title coordinate:_coordinate];
-    [controller displayViewController:mapController];
-
+    NSLog(@"this function was removed.");
 }
 @end
